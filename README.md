@@ -13,7 +13,6 @@ Fork from https://github.com/HMBSbige/DotNetDllPathPatcher
 ```shell
 build.ps1 {发布架构} {项目名称} [可选]"{忽略的文件或文件夹}"
 ```
-
 exp:
 ```shell
 .\build.ps1 win-x64 Sample.Mvc "wwwroot,appsettings.json"   #不要忘了引号
