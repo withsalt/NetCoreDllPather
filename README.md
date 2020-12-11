@@ -6,7 +6,7 @@ Fork from https://github.com/HMBSbige/DotNetDllPathPatcher
 1）复制src文件夹中的Build文件夹和build.ps1脚本到解决方案目录。   
 
 2）执行build.ps1  
-在解决方案目录下执行`build.ps1`  
+在解决方案目录下执行`build.ps1`，默认要编译的项目在当前解决方案更目录下，且项目的.csproj文件名称与指定的项目名称相同。  
 ```shell
 build.ps1 {发布架构} {项目名称} [可选]"{忽略的文件或文件夹}"
 ```
@@ -28,7 +28,6 @@ exp:
 | linux-x64  | linux-x64  |
 | linux-arm  | linux-arm 32位  |
 
-默认要编译的项目在当前解决方案更目录下，且项目的.csproj文件名称与指定的项目名称相同。  
 
 # Demo
 ![demo](https://github.com/withsalt/NetCoreDllPather/blob/main/img/demo.png "demo")  
