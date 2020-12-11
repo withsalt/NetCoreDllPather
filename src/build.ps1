@@ -1,11 +1,13 @@
-param([string]$buildtfm = 'all')
+param([string]$buildtfm = 'all',[string]$app_name = '',[string]$ingorefiles = 'wwwroot')
 $ErrorActionPreference = 'Stop'
 
 Write-Host 'dotnet SDK version'
 dotnet --version
 
-#修改要打包的app名称
-$app_name = 'Sample.Mvc'
+if($app_name -eq $null -or $app_name -eq ""){
+	Write-Host -ForegroundColor Red "Please input build project name."
+	return;
+}
 
 #以下非必要情况不用修改
 $build_file_name = "$app_name.exe"
@@ -25,7 +27,7 @@ $buildLinuxX64   = $buildtfm -eq 'all' -or $buildtfm -eq 'linux-x64'  #linux x64
 $buildLinuxArm32 = $buildtfm -eq 'all' -or $buildtfm -eq 'linux-arm'  #linux arm 32
 
 if(!($build -or $buildWinX86 -or $buildWinX64 -or $buildWinArm -or $buildLinuxX64 -or $buildLinuxArm32)){
-	Write-Host "Unsupport build platform name($buildtfm), only support all,platform,win-x86,win-x64,win-arm,linux-x64,linux-arm"
+	Write-Host -ForegroundColor Red "Unsupport build platform name($buildtfm), only support all,platform,win-x86,win-x64,win-arm,linux-x64,linux-arm"
 	return;
 }
 
@@ -41,7 +43,7 @@ function Build-App
 	dotnet publish -c $configuration -f $net_tfm $proj_path
 	if ($LASTEXITCODE) { exit $LASTEXITCODE }
 
-	& $dllpatcher_exe -s "$publishDir\$build_file_name" -d "bin" -ig "wwwroot"
+	& $dllpatcher_exe -s "$publishDir\$build_file_name" -d "bin" -ig "$ingorefiles"
 	if ($LASTEXITCODE) { exit $LASTEXITCODE }
 }
 
@@ -68,7 +70,7 @@ function Build-SelfContained
 	Write-Host "Building $publishDir\$new_file_name"
 
 
-	& $dllpatcher_exe -s "$publishDir\$new_file_name" -d "bin" -ig "wwwroot"
+	& $dllpatcher_exe -s "$publishDir\$new_file_name" -d "bin" -ig "$ingorefiles"
 	if ($LASTEXITCODE) { exit $LASTEXITCODE }
 }
 
