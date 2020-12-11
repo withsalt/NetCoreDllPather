@@ -1,14 +1,15 @@
 # NetCoreDllPather
-用于编译 .NET Core 程序的模块，可以将生成的可执行文件与DLL文件分离，将DLL文件单独放到程序目录中的文件夹中。
+用于编译 .NET Core 程序的模块，可以将生成的可执行文件与DLL文件分离，将DLL文件单独放到程序目录中的文件夹中。  
+Fork from https://github.com/HMBSbige/DotNetDllPathPatcher
 
 # How to use
-1. 复制src文件夹中的Build文件夹和build.ps1脚本到解决方案目录。
+1. 复制src文件夹中的Build文件夹和build.ps1脚本到解决方案目录。   
 
-2. 修改build.ps1
-记事本或任意编辑工具打开build.ps1，修改$app_name为你要编译发布的项目名称，默认项目在当前解决方案更目录下，且项目的.csproj文件名称与指定的项目名称相同。
+2. 修改build.ps1  
+记事本或任意编辑工具打开build.ps1，修改$app_name为你要编译发布的项目名称，默认项目在当前解决方案更目录下，且项目的.csproj文件名称与指定的项目名称相同。  
 
-3. 执行build.ps1
-在解决方案目录下执行`build.ps1`
+3. 执行build.ps1  
+在解决方案目录下执行`build.ps1`  
 ```shell
 build.ps1 [可选，默认all]{发布架构}
 ```
@@ -25,4 +26,4 @@ build.ps1 [可选，默认all]{发布架构}
 | linux-arm  | linux-arm 32位  |
 
 # Demo
-![demo](https://doc.berrypi.net/server/index.php?s=/api/attachment/visitFile/sign/720879f5be51bbf97de8eb914f35223e&showdoc=.jpg "demo")
+![demo](https://github.com/withsalt/NetCoreDllPather/blob/main/img/demo.png "demo")  
