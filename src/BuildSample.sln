@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Model", "Sample.Model\Sample.Model.csproj", "{A3266B96-C2A3-4B6C-A449-792D3DC84C2F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample", "Sample\Sample.csproj", "{0CD68F5D-ABF7-418D-A095-5A966D004061}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Mvc", "Sample.Mvc\Sample.Mvc.csproj", "{69DF5928-5D4B-4CC2-89B6-A3E9259FBD32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Config", "Sample.Config\Sample.Config.csproj", "{2084E280-275B-4C7C-8B97-C12B06714E4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{AE0BA6F6-BB40-4735-96E7-FC7A71C983AB}"
+	ProjectSection(SolutionItems) = preProject
+		build.ps1 = build.ps1
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetDllPathPatcher", "Build\DotNetDllPathPatcher\DotNetDllPathPatcher.csproj", "{8E09D5DE-3707-4A8B-AC32-C5E59620B447}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3266B96-C2A3-4B6C-A449-792D3DC84C2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3266B96-C2A3-4B6C-A449-792D3DC84C2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3266B96-C2A3-4B6C-A449-792D3DC84C2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3266B96-C2A3-4B6C-A449-792D3DC84C2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CD68F5D-ABF7-418D-A095-5A966D004061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CD68F5D-ABF7-418D-A095-5A966D004061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CD68F5D-ABF7-418D-A095-5A966D004061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CD68F5D-ABF7-418D-A095-5A966D004061}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69DF5928-5D4B-4CC2-89B6-A3E9259FBD32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69DF5928-5D4B-4CC2-89B6-A3E9259FBD32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69DF5928-5D4B-4CC2-89B6-A3E9259FBD32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69DF5928-5D4B-4CC2-89B6-A3E9259FBD32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2084E280-275B-4C7C-8B97-C12B06714E4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2084E280-275B-4C7C-8B97-C12B06714E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2084E280-275B-4C7C-8B97-C12B06714E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2084E280-275B-4C7C-8B97-C12B06714E4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E09D5DE-3707-4A8B-AC32-C5E59620B447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E09D5DE-3707-4A8B-AC32-C5E59620B447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E09D5DE-3707-4A8B-AC32-C5E59620B447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E09D5DE-3707-4A8B-AC32-C5E59620B447}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8E09D5DE-3707-4A8B-AC32-C5E59620B447} = {AE0BA6F6-BB40-4735-96E7-FC7A71C983AB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49DB6147-6056-439E-9449-89CD4B65C27F}
+	EndGlobalSection
+EndGlobal
