@@ -17,9 +17,9 @@ build.ps1 [可选，默认all]{发布架构}
 
 | 参数  | 说明  |
 | :------------ | :------------ |
-| all  | 生成全部架构  |
+| all  | 生成以下全部架构  |
 | platform  | 生成当前平台框架依赖  |
-| win-x86  | 生成当前平台框架依赖  |
+| win-x86  | win-x86  |
 | win-x64  | win-x64  |
 | win-arm  | win-arm 32位  |
 | linux-x64  | linux-x64  |
