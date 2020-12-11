@@ -6,7 +6,7 @@ Fork from https://github.com/HMBSbige/DotNetDllPathPatcher
 1）复制src文件夹中的Build文件夹和build.ps1脚本到解决方案目录。   
 
 2）执行build.ps1
-在解决方案目录下执行`build.ps1`
+在解决方案目录下执行`build.ps1`  
 ```shell
 build.ps1 {发布架构} {项目名称} [可选]"{忽略的文件或文件夹}"
 ```
