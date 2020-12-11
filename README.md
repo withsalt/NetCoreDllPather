@@ -30,4 +30,8 @@ exp:
 
 
 # Demo
-![demo](https://github.com/withsalt/NetCoreDllPather/blob/main/img/demo.png "demo")  
+![demo](https://github.com/withsalt/NetCoreDllPather/blob/main/img/demo01.png "demo")  
+<center>编译命令</center>
+
+![demo](https://github.com/withsalt/NetCoreDllPather/blob/main/img/demo02.png "demo")  
+<center>编辑结果</center>
